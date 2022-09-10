@@ -14,14 +14,8 @@ function Banner({
   buttonText,
 }) {
   return (
-    <Flex
-      flexWrap="wrap"
-      justifyContent="center"
-      alignItems="center"
-      m="10"
-      px="10"
-    >
-      <Image src={imageURL} alt={purpose} height={500} width={350} />
+    <Flex flexWrap="wrap" justifyContent="center" alignItems="center">
+      <Image src={imageURL} alt={purpose} height={500} width={700} />
       <Box p="5">
         <Text color="gray.500" fontSize="sm" fontWeight="medium">
           {purpose}

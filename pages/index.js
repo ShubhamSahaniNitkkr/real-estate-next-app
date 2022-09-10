@@ -4,7 +4,6 @@ import RentApartmentImg from "../assets/images/rent-apartment.jpg";
 import { baseURL, fetchAPI } from "../utils";
 
 export default function Home({ propertiesForSale, propertiesForRent }) {
-  console.log(propertiesForSale, propertiesForRent);
   return (
     <div>
       <h1>Hello world</h1>
@@ -25,13 +24,12 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
 }
 
 export async function getStaticProps() {
-  console.log("called");
   const forSaleResponseObj = await fetchAPI(
-    `${baseURL}/properties/list?locationExternalIDS=5002&purpose=for-sale&hitsPerPage=6`
+    `${baseURL}/properties/list?locationExternalIDs=5002%2C6020&purpose=for-rent&hitsPerPage=25&page=0&categoryExternalID=4`
   );
 
   const forRentResponseObj = await fetchAPI(
-    `${baseURL}/properties/list?locationExternalIDS=5002&purpose=for-rent&hitsPerPage=6`
+    `${baseURL}/properties/list?locationExternalIDs=5002%2C6020&purpose=for-sale&hitsPerPage=25&page=0&categoryExternalID=4`
   );
 
   return {
