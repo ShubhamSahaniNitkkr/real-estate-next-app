@@ -1,3 +1,3 @@
 import Banner from "./Banner";
-
-export { Banner };
+import Property from "./Property";
+export { Banner, Property };

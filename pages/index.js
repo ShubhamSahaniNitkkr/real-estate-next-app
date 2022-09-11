@@ -1,25 +1,27 @@
 import { Flex, Box, Text, Button } from "@chakra-ui/react";
-import { Banner } from "../components";
+import { Banner, Property } from "../components";
 import RentApartmentImg from "../assets/images/rent-apartment.jpg";
 import { baseURL, fetchAPI } from "../utils";
 
 export default function Home({ propertiesForSale, propertiesForRent }) {
   return (
-    <div>
-      <h1>Hello world</h1>
-      <Box>
-        <Banner
-          purpose="For Rent"
-          imageURL={RentApartmentImg}
-          title="Best Rental Homes"
-          subtitle="Students and Small Families"
-          desc1="Best Flats under 8000"
-          desc2="Facilities: AC , Fridge , Parking "
-          buttonURL="/search?purpose=for-rent"
-          buttonText="Explore Renting"
-        />
-      </Box>
-    </div>
+    <Box m="12">
+      <Banner
+        purpose="For Rent"
+        imageURL={RentApartmentImg}
+        title="Best Rental Homes"
+        subtitle="Students and Small Families"
+        desc1="Best Flats under 8000"
+        desc2="Facilities: AC , Fridge , Parking "
+        buttonURL="/search?purpose=for-rent"
+        buttonText="Explore Renting"
+      />
+      <Flex>
+        {propertiesForRent.map((property) => (
+          <Property property={property} key={property.id} />
+        ))}
+      </Flex>
+    </Box>
   );
 }
 
