@@ -30,7 +30,7 @@ npm install && npm run dev
 
 ## Live Demo
 
-[https://shubhamsahaniNitkkr.github.io/old-basic-projects/projects/real-estate-next-app/](https://shubhamsahaniNitkkr.github.io/old-basic-projects/projects/real-estate-next-app/)
+[https://shubhamsahaniNitkkr.github.io/real-estate-next-app/](https://shubhamsahaniNitkkr.github.io/real-estate-next-app/)
 
 
 ## Performance & UI
