@@ -2,9 +2,11 @@
   "name": "real-estate-next-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://shubhamsahaniNitkkr.github.io/old-basic-projects/projects/real-estate-next-app",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint"
   },
