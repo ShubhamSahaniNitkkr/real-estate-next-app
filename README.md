@@ -25,7 +25,7 @@ Property listing app with Next.js SSG, Chakra UI, and Bayut API with mock fallba
 ## How to Run Locally
 
 ```bash
-npm install --legacy-peer-deps && npm run dev
+npm install && npm run dev
 ```
 
 ## Live Demo
